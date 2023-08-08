@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Golos+Text:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Golos Text', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+:root{
+    --main-color:rgba(30,44,105,255);
+}
+body{
+    background-color: #0c122c;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo img{
+    width: 140px;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    display: flex;
+    gap: 20px;
+}
+.container .fylo{
+    background-color: rgba(30,44,105,255);
+    width: 350px;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 50px 30px;
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px 35% 10px 10px/ 10px 50% 10px 10px ;
+    -webkit-border-radius: 10px 35% 10px 10px/ 10px 50% 10px 10px ;
+    -moz-border-radius: 10px 35% 10px 10px/ 10px 50% 10px 10px ;
+    -ms-border-radius: 10px 35% 10px 10px/ 10px 50% 10px 10px ;
+    -o-border-radius: 10px 35% 10px 10px/ 10px 50% 10px 10px ;
+}
+.icons{
+    display: flex;
+    z-index: 2;
+    gap: 20px;
+    padding: 5px 15px;
+}
+.icons i {
+    font-size: 25px;
+    color: #6b7dd6;
+    display: block;
+    position: relative;
+
+}
+.icons i::after{
+    content: "";
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    background-color: #0b122e;
+    z-index: -1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.percent {
+    min-width: 514px;
+    width: 600px;
+    background-color: var(--main-color);
+    padding: 40px;
+    color: white;
+    height: fit-content;
+    position: relative;
+    border-radius: 10px;
+    align-self: flex-end;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.percent .special{
+    width: 100%;
+    height: 20px;
+    margin-top: 15px;
+    background-color: #151e47;
+    border-radius: 10px;
+    padding: 2px;
+}
+.percent .special p{
+    width: 80%;
+    height: 18px;
+    background-image: linear-gradient(45deg, #fe9c97, #fb4d91);
+    border-radius: 9px;
+    display: block;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    position: relative;
+}
+.special p span {
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    right: 5px;
+}
+.percent p:last-child{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.clear{
+    clear: both;
+}
+.shapes {
+    position: absolute ;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 50vh;
+
+    background-image: url(fylo-data-storage-component-master/images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.nav {
+    width: 180px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    top: -30px;
+    right: 30px;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.nav span{
+    font-size: 40px;
+}
+.nav::before{
+    content: "";
+    width: 30px;
+    height: 50px;
+
+    position: inherit;
+    bottom: -30px;
+    right: 0;
+    background-image: linear-gradient(45deg, transparent 40%, white 40%,white 100%);
+}
+@media (max-width:878px){
+
+    .container{
+        width: calc(100%-10px);
+        flex-direction: column;
+        padding: 30px;
+        padding: 0;
+    }
+    .container .fylo,
+    .percent{
+        width: 100%;
+        min-width: initial;
+    }
+    .nav{
+        left: 50%;
+        right: initial;
+        top: initial;
+        bottom: 0px;
+        transform: translate(-50%,50%);
+        -webkit-transform: translate(-50%,50%);
+        -moz-transform: translate(-50%,50%);
+        -ms-transform: translate(-50%,50%);
+        -o-transform: translate(-50%,50%);
+}
+    .nav::before{
+        display: none;
+    }
+    
+}
